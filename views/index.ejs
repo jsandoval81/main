@@ -281,20 +281,32 @@
         </section>
         <section>
             <div id="about">
-                <div class="col left">
-                    <div style="float: left; border: 1px solid #000; width: 48%; height: 48%;">a</div>
-                    <div style="float: left; border: 1px solid #000; width: 48%; height: 48%;">b</div>
-                    <div style="clear: both; float: left; border: 1px solid #000; width: 48%; height: 48%;">c</div>
-                    <div style="float: left; border: 1px solid #000; width: 48%; height: 48%;">d</div>
-                    <!--img alt="images" src="/main/images/johnsandoval.jpg" style="max-width: 100%; min-width: 100%; height: auto;" /-->
+                <div id="about-img" class="col left" style="background-color: #E1E1E1; overflow: hidden;">
+
+                    <div style="float: left; width: 50%; height: 50%; text-align: right;">
+                        <img alt="tile1" src="/main/images/sunset2.jpg" style="max-width: 100%; width: auto; height: 100%;" />
+                    </div>
+
+                    <div style="float: left; width: 50%; height: 50%; text-align: left; border: 0;">
+                        <img alt="tile1" src="/main/images/john1.jpg" style="max-width: 100%; width: auto; height: 100%" />
+                    </div>
+
+                    <div style="clear: both; float: left; width: 50%; height: 50%; text-align: right;">
+                        <img alt="tile1" src="/main/images/john2.jpg" style="max-width: 100%; width: auto; height: 100%;" />
+                    </div>
+
+                    <div style="float: left; width: 50%; height: 50%; text-align: left;">
+                        <img alt="tile1" src="/main/images/sunset1.jpg" style="max-width: 100%; width: auto; height: 100%;" />
+                    </div>
+                    
                 </div>
-                <div class="col right">
+                <div class="col right" style="padding-left: 20px;">
                     <h2 class="grey-large dark">
                         Hello!<br>
                         I'm John Sandoval.
                     </h2>
                     <p>
-                        I am a web developer and data architect based in Colorado near Boulder. I'm a proud husband and father; I love music, microbrews, and of course developing.
+                        I am a web developer and data architect based in Colorado near Boulder. I'm a proud husband and father; I love music, microbrews, and (of course) developing.
                     </p>
                 </div>
             </div>
@@ -305,42 +317,16 @@
                     <li class="menu-item"><a href="mailto:john.x.sandoval@gmail.com">Email</a></li>
                     <li class="menu-item"><a href="https://www.linkedin.com/in/johnxsandoval" target="_blank">LinkedIn</a></li>
                     <li class="menu-item"><a href="#">Projects</a></li>
-                    <li class="menu-item"><a href="#">The Journey</a></li>
+                    <li class="menu-item"><a href="/journey">The Journey</a></li>
                 </ul>
             </div>
-            <!--div class="contactWrapper">
-                <div id="contact">
-                    <article>
-                        <div class="article artc1">
-                            <h2>Get in touch</h2>
-                            <p>
-                                Got a project you would like to collaborate on?
-                            </p>
-
-                            <h3>Email</h3>
-                            <p><a href="mailto:john.x.sandoval@gmail.com">welcome@johnsandoval.us</a></p>
-                        </div>
-                    </article>
-                    <article>
-                        <div class="article artc2">
-                            <h2>Networking</h2>
-                            <p>Find me on these sites:</p>
-                            <ul>
-                                <li><a href="https://www.linkedin.com/in/johnxsandoval" target="_blank">LinkedIn</a></li>
-                            </ul>
-                        </div>
-                    </article>
-                    <div class="clear"></div>
-                </div>
-
-            </div-->
         </section>
         <% var thisYear = new Date().getFullYear(); %>
-        <div class="footer">Copyright &copy; <%= thisYear %> John Sandoval - johnsandoval.us<br>
-                            <span style="font-size:0.6em;">HTML5 | CSS3 | JavaScript | Full Stack Development | SQL | SAS | NoSQL | Data Engineering</span></div>
+        <div class="footer">
+            <div>Copyright &copy; <%= thisYear %> John Sandoval - johnsandoval.us</div>
+            <span style="font-size:0.6em;">HTML5 | CSS3 | JavaScript | Full Stack Development | SQL | SAS | NoSQL | Data Engineering</span>
+        </div>
     </div>
-
-
 
     <!--  JavaScript -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -348,6 +334,6 @@
     <script src="/main/javascripts/masonry.min.js"></script>
     <script src="/main/javascripts/TweenMax.min.js"></script>
     <script src="/main/javascripts/application.js"></script>
-
+    
 </body>
 </html>
