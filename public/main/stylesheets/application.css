@@ -46,7 +46,23 @@ a img {
 .clear {
     clear: both;
 }
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.dark-text {
+    color: #202020;
+}
+.custom-font {
+    font-family: 'Poiret One', sans-serif;
+}
+.dark-bg {
+    background-color: #202020;
+}
 .quad {
+    position: relative;
     margin: 0;
     padding: 0;
     float: left;
@@ -60,17 +76,52 @@ a img {
     width: auto;
     height: 100%;
 }
-.text-left {
-    text-align: left;
+.quad-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #E1E1E1;
+    -moz-opacity: 0.25;
+    -khtml-opacity: 0.25;
+    opacity: 0.25;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=25);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+    filter:alpha(opacity=25);
+    z-index: 998;
 }
-.text-right {
-    text-align: right;
+.corner-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 50px solid #E1E1E1; 
+    border-right: 50px solid transparent;
+    z-index: 999;
 }
-.dark-text {
-    color: #202020;
+.corner-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 50px solid #E1E1E1; 
+    border-left: 50px solid transparent;
+    z-index: 999;
 }
-.custom-font {
-    font-family: 'Poiret One', sans-serif;
+.corner-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 50px solid #E1E1E1; 
+    border-right: 50px solid transparent;
+    z-index: 999;
+}
+.corner-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 50px solid #E1E1E1; 
+    border-left: 50px solid transparent;
+    z-index: 999;
 }
 
 /******************************/
@@ -287,12 +338,12 @@ a img {
     -moz-box-shadow: rgba(35, 35, 50, 0.8) 0px 0px 11px -2px;
     box-shadow: rgba(35, 35, 50, 0.8) 0px 0px 11px -2px;
 }
-#work {
+#skills {
     padding-bottom: 124px;
     width: 960px;
     margin: 0 auto;
 }
-#work h2 {
+#skills h2 {
     text-align: center;
     padding-top: 75px;
     padding-bottom: 50px;
@@ -300,13 +351,13 @@ a img {
     font-weight: bold;
     color: #808080;
 }
-#workPreview {
+#skills-preview {
     min-width: 360px !important;
     margin: 0 auto;
     margin-top: 30px;
     position: relative;
 }
-.workItem {
+.skill-item {
     float: left;
     display: table-block;
     text-align: center;
@@ -331,36 +382,36 @@ a img {
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
 }
-.workItem .workItemTable {
+.skill-item .skill-item-table {
     display: table;
     width: 100%;
     height: 100%}
-.workItem.hover {
+.skill-item.hover {
     background-size: 104% 104%
 }
-.workItem img, .workItem .mask {
+.skill-item img, .skill-item .mask {
     z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
 }
-.workItem .mask {
+.skill-item .mask {
     z-index: 2;
     display: none;
 }
-.workItem .info {
+.skill-item .info {
     display: none;
     vertical-align: middle;
     position: relative;
     z-index: 3;
     color: #fff !important;
 }
-.workItem .info p, .workItem .info li, .workItem .info a {
+.skill-item .info p, .skill-item .info a {
     color: #fff !important;
     text-shadow: 1px 1px 1px rgba(35, 35, 50, 0.2);
     font-size: 1.7em;
 }
-.workItem .mask {
+.skill-item .mask {
     width: 100%;
     height: 100%;
     background: #62a2bb;
@@ -397,10 +448,12 @@ a img {
 #about p {
     padding: 75px 0 0 0;
     text-align: left;
-
     font-size: 2.5em;
     line-height: 1.4em;
     color: #202020;
+}
+#about-img {
+    position: relative;
 }
 
 /****************************/
@@ -449,9 +502,9 @@ a img {
     transition-timing-function: ease-in-out;
 }
 
-/*******************/
-/** MEDIA QUERIES **/
-/*******************/
+/*******************************/
+/** MAIN PAGE - MEDIA QUERIES **/
+/*******************************/
 @media (max-width: 1279px) {
     #about {
         height: 427px;
@@ -618,3 +671,28 @@ a img {
     }
 }
 
+/******************/
+/** JOURNEY PAGE **/
+/******************/
+#journey-narrative {
+    padding: 20px;
+}
+#journey-narrative h2 {
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    font-size: 5em;
+    font-weight: bold;
+    color: #C0C0C0;
+}
+#journey-narrative h3 {
+    text-align: left;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #C0C0C0;
+}
+#journey-narrative p {
+    font-size: 2em;
+    line-height: 1.4em;
+    color: #606060;   
+}

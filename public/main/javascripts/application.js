@@ -1,5 +1,4 @@
 
-
 //==================
 //== MAIN PAGE UI ==
 //==================
@@ -30,9 +29,9 @@ WEBAPP.prototype.scrollAnimation = function(){
     if ((!oldieishere)&&(!that.isTouch)&&($(window).width()>1024)){
 
         //set elements up
-        var multipleWorkItems = $('.workItem');
-        for (var i=0;i<multipleWorkItems.length;i++){
-            var $curItem = $(multipleWorkItems[i]);
+        var multipleSkillItems = $('.skill-item');
+        for (var i=0;i<multipleSkillItems.length;i++){
+            var $curItem = $(multipleSkillItems[i]);
             that.animationarray.push(new slideableelement($curItem,"bottom",{css:{scale:0,opacity:0}}));
         }
 
@@ -53,7 +52,7 @@ WEBAPP.prototype.scrollAnimation = function(){
 };
 
 var PROJECTS = function(){
-    this.projects = $('.workItem');
+    this.projects = $('.skill-item');
 
     this.projects.hover(function(){
         // in
@@ -226,8 +225,8 @@ $(document).ready(function() {
     // Initiate object
     var webapp = new WEBAPP();
 
-    $('#workPreview').masonry({
-        itemSelector : '.workItem',
+    $('#skills-preview').masonry({
+        itemSelector : '.skill-item',
         isResizable: true,
         isFitWidth: true,
         isAnimated: true,
