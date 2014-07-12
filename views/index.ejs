@@ -10,10 +10,10 @@
     <!-- Title -->
     <title>John Sandoval</title>
     <!-- CSS -->
-    <link rel='stylesheet' href="/main/stylesheets/style.css" />
+    <link rel='stylesheet' href="/main/stylesheets/application.css" />
     <script type="text/javascript">
-        oldieishere=false;
-        ieishere=false;
+        oldieishere = false;
+        ieishere = false;
     </script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -22,47 +22,35 @@
     <![endif]-->
 </head>
 <body>
+
     <!--[if lt IE 7]>
         <div id="content" style="margin-top:100px; text-align: center;">
             <h2>Hello!</h2>
-            <p>It looks like you have stumbled across my website on a non-compatible browser. Please download an compatible browser (I suggest <a href="http://www.mozilla.org/en-US/firefox">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>). Please contact me at <a href="mailto:john.x.sandoval@gmail.com">welcome@johnsandoval.us</a>.</p>
+            <p>It looks like you have happened across my website on a non-compatible browser. Please download an compatible browser (I suggest <a href="http://www.mozilla.org/en-US/firefox">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>). Please contact me at <a href="mailto:john.x.sandoval@gmail.com">welcome@johnsandoval.us</a> with questions.</p>
         </div>
     <![endif]-->
-    <div id="menu">
+
+    <!--div id="menu">
         <div id="logo" class="animate">John Sandoval</div>
-        <div id="mobileMenu"></div>
+        <div id="mobile-menu"></div>
         <nav id="nav">
-            <a href="#">WORK</a>
+            <a href="#">SKILLS</a>
             <a href="#">ABOUT</a>
             <a href="#">CONTACT</a>
         </nav>
-    </div>
+    </div-->
 
     <header id="header">
         <h1>Full-stack web developer<br />and<br />data engineer</h1>
     </header>
 
-    <div id="contentContainer">
+    <div id="content-container">
+        <!-- My Skills -->
         <section id="work">
-            <h2 class="grey-large">
-                Learned and Learning
-            </h2>
-            <div id="workSelector">
-                <a href="#WEBSITES">
-                    WEBSITES
-                </a> /
-                <a href="#APPS">
-                    APPS
-                </a> /
-                <a href="#DESIGN">
-                    DESIGN
-                </a> /
-                <a href="#OTHERS">
-                    OTHERS
-                </a>
-            </div>
 
-            <div id="workPreview" class="animateWidth" style="margin: 0 auto;">
+            <h2 class="custom-font">Learned and Learning</h2>
+
+            <div id="workPreview" class="animate-width">
                 
                 <!-- JavaScript -->
                 <div class="workItem" style="width:225px; height:225px; background-image:url('/main/images/javascript.jpg');">
@@ -162,7 +150,7 @@
                         <div class="mask"></div>
                         <div class="info">
                             <h3><a href="#" target="_blank">MS SQL Server</a></h3>
-                            <p>Hard to avoid this one. Not much else to say.</p>
+                            <p>Hard to avoid this one - especially in BI land. Not much else to say.</p>
                         </div>
                     </div>
                 </div>
@@ -202,7 +190,7 @@
                         <div class="mask"></div>
                         <div class="info">
                             <h3><a href="#" target="_blank">NGINX</a></h3>
-                            <p>How easy are reverse proxies?! It's been awhile since I've been intreagued by a web server.</p>
+                            <p>How easy are reverse proxies?! It's been awhile since I've been intrigued by a web server.</p>
                         </div>
                     </div>
                 </div>
@@ -278,54 +266,56 @@
                 </div-->
 
             </div>
+
         </section>
+
         <section>
+            <!-- About Me -->
             <div id="about">
-                <div id="about-img" class="col left" style="background-color: #E1E1E1; overflow: hidden;">
 
-                    <div style="float: left; width: 50%; height: 50%; text-align: right;">
-                        <img alt="tile1" src="/main/images/sunset2.jpg" style="max-width: 100%; width: auto; height: 100%;" />
+                <div id="about-img" class="col left">
+                    <div class="quad text-right">
+                        <img alt="tile1" src="/main/images/sunset2.jpg" />
                     </div>
-
-                    <div style="float: left; width: 50%; height: 50%; text-align: left; border: 0;">
-                        <img alt="tile1" src="/main/images/john1.jpg" style="max-width: 100%; width: auto; height: 100%" />
+                    <div class="quad text-left">
+                        <img alt="tile2" src="/main/images/john1.jpg" />
                     </div>
-
-                    <div style="clear: both; float: left; width: 50%; height: 50%; text-align: right;">
-                        <img alt="tile1" src="/main/images/john2.jpg" style="max-width: 100%; width: auto; height: 100%;" />
+                    <div class="quad clear text-right">
+                        <img alt="tile3" src="/main/images/john2.jpg" />
                     </div>
-
-                    <div style="float: left; width: 50%; height: 50%; text-align: left;">
-                        <img alt="tile1" src="/main/images/sunset1.jpg" style="max-width: 100%; width: auto; height: 100%;" />
+                    <div class="quad text-left">
+                        <img alt="tile4" src="/main/images/sunset1.jpg" />
                     </div>
-                    
                 </div>
-                <div class="col right" style="padding-left: 20px;">
-                    <h2 class="grey-large dark">
-                        Hello!<br>
-                        I'm John Sandoval.
-                    </h2>
+
+                <div id="about-info" class="col right dark-text">
+                    <h2 class="custom-font">Hello!<br />I'm John Sandoval.</h2>
                     <p>
-                        I am a web developer and data architect based in Colorado near Boulder. I'm a proud husband and father; I love music, microbrews, and (of course) developing.
+                        I am a web developer and data architect based in Colorado near Boulder. I'm a proud husband and father. I love music, microbrews, and (of course) developing.
                     </p>
                 </div>
+
             </div>
+
         </section>
-        <section>
-            <div id="nav-menu-container">
-                <ul id="nav-menu">
-                    <li class="menu-item"><a href="mailto:john.x.sandoval@gmail.com">Email</a></li>
-                    <li class="menu-item"><a href="https://www.linkedin.com/in/johnxsandoval" target="_blank">LinkedIn</a></li>
-                    <li class="menu-item"><a href="#">Projects</a></li>
-                    <li class="menu-item"><a href="/journey">The Journey</a></li>
-                </ul>
-            </div>
-        </section>
-        <% var thisYear = new Date().getFullYear(); %>
-        <div class="footer">
-            <div>Copyright &copy; <%= thisYear %> John Sandoval - johnsandoval.us</div>
-            <span style="font-size:0.6em;">HTML5 | CSS3 | JavaScript | Full Stack Development | SQL | SAS | NoSQL | Data Engineering</span>
+
+        <!-- Navigation Menu -->
+        <div id="nav-menu-container">
+            <ul id="nav-menu">
+                <li class="menu-item"><a href="mailto:john.x.sandoval@gmail.com">Email</a></li>
+                <li class="menu-item"><a href="https://www.linkedin.com/in/johnxsandoval" target="_blank">LinkedIn</a></li>
+                <li class="menu-item"><a href="#">Projects</a></li>
+                <li class="menu-item"><a href="/journey">The Journey</a></li>
+            </ul>
         </div>
+
+        <% var thisYear = new Date().getFullYear(); %>
+        <!-- Page Footer -->
+        <div id="footer">
+            <div class="copyright">Copyright &copy; <%= thisYear %> John Sandoval - johnsandoval.us</div>
+            <div class="signature">HTML5 | CSS3 | JavaScript | JQuery | Full Stack Development | SQL | SAS | BI | Enterprise Reporting | NoSQL | Data Engineering</div>
+        </div>
+
     </div>
 
     <!--  JavaScript -->

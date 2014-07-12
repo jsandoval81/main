@@ -1,13 +1,4 @@
 
-//======================
-//== GLOBAL VARIABLES ==
-//======================
-	//== Store the parsable page URI
-	var pageURL = $.url();
-
-//======================
-//== NAVIGATION MENUS ==
-//======================
 
 //==================
 //== MAIN PAGE UI ==
@@ -18,7 +9,7 @@ var WEBAPP = function(){
     this.setUpRequestAnimationFrame()
     this.animationarray = [];
 
-    this.header = new HEADERSCALE(this,"header","contentContainer");
+    this.header = new HEADERSCALE(this,"header","content-container");
     this.projects = new PROJECTS();
 
     this.scrollAnimation();
@@ -231,7 +222,8 @@ Number.prototype.limit=function(min,max){
 };
 
 $(document).ready(function() {
-    // initiate object
+
+    // Initiate object
     var webapp = new WEBAPP();
 
     $('#workPreview').masonry({
@@ -245,7 +237,7 @@ $(document).ready(function() {
 
 // this stops the font-size,margin,padding animating on load sometimes.
 window.onload = function(){
-    $('body').addClass("animateall");
+    $('body').addClass("animate-all");
 };
 
 
