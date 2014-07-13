@@ -57,25 +57,25 @@ var PROJECTS = function(){
     this.projects.hover(function(){
         // in
         var $this = $(this);
-        $this.addClass("hover");
+        $this.addClass("skill-hover");
         TweenMax.fromTo($this.find(".mask"),0.6,{opacity:0,display:'none'},{opacity:0.85,display:'block'});
         TweenMax.fromTo($this.find(".info"),0.6,{opacity:0,display:'none'},{opacity:1,display:'table-cell'});
     },function(){
         // out
         var $this = $(this);
-        $this.removeClass("hover");
+        $this.removeClass("skill-hover");
         TweenMax.to($this.find(".mask"),0.6,{opacity:0,display:'none'});
         TweenMax.to($this.find(".info"),0.6,{opacity:0,display:'none'});
     });
 
-    this.projects.on("click",function(){
+    /*this.projects.on("click",function(){
         var url = $(this).find("a").attr("href");
         if(window.open){
         	window.open(url, '_blank');
         } else {
         	window.location = url
         }
-    })
+    })*/
 
 };
 

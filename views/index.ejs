@@ -10,34 +10,22 @@
         </div>
     <![endif]-->
 
-    <!--div id="menu">
-        <div id="logo" class="animate">John Sandoval</div>
-        <div id="mobile-menu"></div>
-        <nav id="nav">
-            <a href="#">SKILLS</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CONTACT</a>
-        </nav>
-    </div-->
-
     <header id="header">
-        <h1>Full-stack web developer<br />and<br />data engineer</h1>
+        <h1 class="custom-font">Full-stack web developer<br />and<br />data engineer</h1>
     </header>
 
     <div id="content-container">
         <!-- My Skills -->
         <section id="skills">
-
             <h2 class="custom-font">Learned and Learning</h2>
-
             <div id="skills-preview" class="animate-width">
-                
+                <div class="grid-sizer"></div>
                 <!-- JavaScript -->
                 <div class="skill-item" style="width:225px; height:225px; background-image:url('/main/images/javascript.jpg');">
                     <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">JavaScript</a></h3>
+                            <h3><a href="http://javascript.crockford.com/javascript.html" target="_blank">JavaScript</a></h3>
                             <p>For both work and play. Currently learning the MEAN stack and having a blast.</p>
                         </div>
                     </div>
@@ -47,7 +35,7 @@
                     <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">HTML5 + CSS3</a></h3>
+                            <h3><a href="http://www.html5rocks.com/" target="_blank">HTML5</a> + <a href="http://www.css3.info/" target="_blank">CSS3</a></h3>
                             <p>I've always had a passion for front-end dev and these guys are keeping things very fun.</p>
                         </div>
                     </div>
@@ -57,7 +45,7 @@
                     <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">Amazon Web Services</a></h3>
+                            <h3><a href="http://aws.amazon.com/" target="_blank">Amazon Web Services</a></h3>
                             <p>EC2 and S3 keep me from owning server racks</p>
                         </div>
                     </div>
@@ -67,29 +55,19 @@
                     <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#">Oracle PL/SQL</a></h3>
+                            <h3><a href="http://www.oracle.com/technetwork/database/features/plsql/index.html" target="_blank">Oracle PL/SQL</a></h3>
                             <p>I've used this leading platform for advanced relational querying, object permissions, custom packages, and schema builds.</p>
                         </div>
                     </div>
                 </div>
-                <!-- SAS -->
+                <!-- SAS and SAS BI-->
                 <div class="skill-item" style="width:351px; height:144px; background-image:url('/main/images/sas.jpg');">
                     <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">SAS</a></h3>
+                            <h3><a href="http://www.sas.com/" target="_blank">SAS</a> &amp; <a href="http://www.sas.com/en_us/software/business-intelligence/enterprise-bi-server.html" target="_blank">SAS BI</a></h3>
                             <p>I know this stuff cold. The language, the BI environment, even for driving custom HTML5 front ends.</p>
 
-                        </div>
-                    </div>
-                </div>
-                <!-- Mongoose -->
-                <div class="skill-item" style="width:160px; height:160px; background-image:url('/main/images/mongoose.jpg');">
-                    <div class="skill-item-table">
-                        <div class="mask"></div>
-                        <div class="info">
-                            <h3><a href="#" target="_blank">Mongoose</a></h3>
-                            <p>Provides some useful MongoDB abstractions.</p>
                         </div>
                     </div>
                 </div>
@@ -98,7 +76,7 @@
                     <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">JQuery</a></h3>
+                            <h3><a href="http://jquery.com/" target="_blank">JQuery</a></h3>
                             <p>I've mainly used it on the front end, but looking forward to seeing what it can do server side.</p>
 
                         </div>
@@ -109,28 +87,18 @@
                     <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">Git</a></h3>
+                            <h3><a href="http://git-scm.com/" target="_blank">Git</a></h3>
                             <p>With GitHub, because I've worked at companies that didn't use version control. Yikes!</p>
                         </div>
                     </div>
                 </div>
                 <!-- NodeJS -->
                 <div class="skill-item" style="width:318px; height:159px; background-image:url('/main/images/nodejs.jpg');">
-                    <div>
-                        <div class="mask"></div>
-                        <div class="info">
-                            <h3><a href="#" target="_blank">Node JS</a></h3>
-                            <p>I'm as excited about this as I was when JQuery came out.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- SQL Server -->
-                <div class="skill-item" style="width:248px; height:203px; background-image:url('/main/images/mssqlserver.jpg');">
                     <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">MS SQL Server</a></h3>
-                            <p>Hard to avoid this one - especially in BI land. Not much else to say.</p>
+                            <h3><a href="http://nodejs.org/" target="_blank">Node JS</a></h3>
+                            <p>I'm as excited about this as I was when JQuery came out.</p>
                         </div>
                     </div>
                 </div>
@@ -139,77 +107,99 @@
                     <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">MongoDB</a></h3>
+                            <h3><a href="http://www.mongodb.org/" target="_blank">MongoDB</a></h3>
                             <p>I love the flexibility of this document DBs for several apps I'm working on.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mongoose -->
+                <div class="skill-item" style="width:160px; height:160px; background-image:url('/main/images/mongoose.jpg');">
+                    <div class="skill-item-table">
+                        <div class="mask"></div>
+                        <div class="info">
+                            <h3><a href="http://mongoosejs.com/" target="_blank">Mongoose</a></h3>
+                            <p>Provides some useful MongoDB abstractions.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- SQL Server -->
+                <div class="skill-item" style="width:248px; height:203px; background-image:url('/main/images/mssqlserver.jpg');">
+                    <div class="skill-item-table">
+                        <div class="mask"></div>
+                        <div class="info">
+                            <h3><a href="http://www.microsoft.com/sql" target="_blank">MS SQL Server</a></h3>
+                            <p>Hard to avoid this one - especially in BI land. Not much else to say.</p>
                         </div>
                     </div>
                 </div>
                 <!-- OAuth -->
                 <div class="skill-item" style="width:225px; height:224px; background-image:url('/main/images/oauth.jpg');">
-                    <div>
+                    <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">OAuth 2.0</a></h3>
+                            <h3><a href="http://oauth.net/2/" target="_blank">OAuth 2.0</a></h3>
                             <p>I'm hoping OAuth and OpenID survive their trials - I like what they're designed to do.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- AngularJS -->
-                <div class="skill-item" style="width:219px; height:230px; background-image:url('/main/images/angularjs.jpg');">
-                    <div>
-                        <div class="mask"></div>
-                        <div class="info">
-                            <h3><a href="#" target="_blank">Angular JS</a></h3>
-                            <p>I know once I get the hang of this it's going to be crazy powerful.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- NGINX -->
-                <div class="skill-item" style="width:251px; height:201px; background-image:url('/main/images/nginx.jpg');">
-                    <div>
-                        <div class="mask"></div>
-                        <div class="info">
-                            <h3><a href="#" target="_blank">NGINX</a></h3>
-                            <p>How easy are reverse proxies?! It's been awhile since I've been intrigued by a web server.</p>
                         </div>
                     </div>
                 </div>
                 <!-- OpenID -->
                 <div class="skill-item" style="width:355px; height:142px; background-image:url('/main/images/openid.jpg');">
-                    <div>
+                    <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">OpenID</a></h3>
+                            <h3><a href="http://openid.net/" target="_blank">OpenID</a></h3>
                             <p>The concept is good and I'll follow it. I'd love to continue using it for my sites.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- AngularJS -->
+                <div class="skill-item" style="width:219px; height:230px; background-image:url('/main/images/angularjs.jpg');">
+                    <div class="skill-item-table">
+                        <div class="mask"></div>
+                        <div class="info">
+                            <h3><a href="https://angularjs.org/" target="_blank">Angular JS</a></h3>
+                            <p>I know once I get the hang of this it's going to be crazy powerful.</p>
                         </div>
                     </div>
                 </div>
                 <!-- MEAN Stack -->
                 <div class="skill-item" style="width:355px; height:142px; background-image:url('/main/images/mean.jpg');">
-                    <div>
+                    <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">MEAN Stack</a></h3>
+                            <h3><a href="http://mean.io/" target="_blank">MEAN Stack</a></h3>
                             <p>I was never inspired by LAMP much. I find variations of the MEAN stack thrilling.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Bootstrap -->
-                <div class="skill-item" style="width:485px; height:104px; background-image:url('/main/images/bootstrap.jpg');">
-                    <div>
+                <!-- NGINX -->
+                <div class="skill-item" style="width:251px; height:201px; background-image:url('/main/images/nginx.jpg');">
+                    <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">Twitter Bootstrap</a></h3>
+                            <h3><a href="http://nginx.com/" target="_blank">NGINX</a></h3>
+                            <p>How easy are reverse proxies?! It's been awhile since I've been intrigued by a web server.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- Bootstrap -->
+                <div class="skill-item" style="width:485px; height:104px; background-image:url('/main/images/bootstrap.jpg');">
+                    <div class="skill-item-table">
+                        <div class="mask"></div>
+                        <div class="info">
+                            <h3><a href="https://blog.twitter.com/2011/bootstrap-twitter" target="_blank">Twitter Bootstrap</a></h3>
                             <p>Easy to use boilerplate for rapid prototyping. Finally getting the hang of the grid.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Windows Server -->
                 <div class="skill-item" style="width:352px; height:143px; background-image:url('/main/images/winserver.jpg');">
-                    <div>
+                    <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">Windows Server</a></h3>
+                            <h3><a href="http://msdn.microsoft.com/windowsserver" target="_blank">Windows Server</a></h3>
                             <p>You need a lot of tools in the toolbelt for this one ladies and gents. Corporations use it; what are you going to do?</p>
                         </div>
                     </div>
@@ -219,17 +209,17 @@
                     <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">MySQL</a></h3>
+                            <h3><a href="http://www.mysql.com/" target="_blank">MySQL</a></h3>
                             <p>Pleasant, mostly free, and I actually really like Workbench.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Linux -->
                 <div class="skill-item" style="width:291px; height:173px; background-image:url('/main/images/linux.jpg');">
-                    <div>
+                    <div class="skill-item-table">
                         <div class="mask"></div>
                         <div class="info">
-                            <h3><a href="#" target="_blank">Linux</a></h3>
+                            <h3><a href="http://www.linux.com/" target="_blank">Linux</a></h3>
                             <p>I'm not a Microsoft hater as much as some. But where possible, I SUDO.</p>
                         </div>
                     </div>
@@ -244,15 +234,11 @@
                         </div>
                     </div>
                 </div-->
-
             </div>
-
         </section>
-
+        <!-- About Me -->
         <section>
-            <!-- About Me -->
             <div id="about">
-
                 <div id="about-img" class="col left">
                     <div class="quad text-right">
                         <img alt="tile1" src="/main/images/sunset2.jpg" />
@@ -275,16 +261,17 @@
                         <div class="quad-mask"></div>
                     </div>
                 </div>
-
                 <div id="about-info" class="col right dark-text">
                     <h2 class="custom-font">Hello!<br />I'm John Sandoval.</h2>
                     <p>
                         I am a web developer and data architect based in Colorado near Boulder. I'm a proud husband and father. I love music, microbrews, and (of course) developing.
                     </p>
                 </div>
-
             </div>
-
         </section>
+        <% include menu %>
+        <% include footer %>
 
-<% include footer %>
+    </div>
+
+<% include end %>
