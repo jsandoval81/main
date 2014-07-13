@@ -357,9 +357,6 @@ a img {
     position: relative;
     overflow: hidden;
 }
-.grid-sizer {
-    width: 85px;
-}
 .skill-item {
     float: left;
     display: table-block;
