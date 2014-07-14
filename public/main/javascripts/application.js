@@ -230,7 +230,7 @@ $(document).ready(function() {
         isResizable: true,
         isFitWidth: true,
         isAnimated: true,
-        columnWidth : 185
+        columnWidth : 1
     });
 });
 
