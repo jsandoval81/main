@@ -46,14 +46,20 @@ a img {
 /******************************/
 /** GLOBAL - UTILITY CLASSES **/
 /******************************/
-.clear {
-    clear: both;
-}
 .text-left {
     text-align: left;
 }
 .text-right {
     text-align: right;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clear {
+    clear: both;
 }
 .dark-text {
     color: #202020;
@@ -179,6 +185,30 @@ a img {
 }
 #footer .signature {
     font-size: 0.7em;
+}
+
+/****************************/
+/** GLOBAL - CONTENT PAGES **/
+/****************************/
+.content-page h2 {
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    font-size: 5em;
+    color: #C0C0C0;
+}
+.content-page h3 {
+    text-align: left;
+    font-size: 3.5em;
+    color: #C0C0C0;
+}
+.content-container p, .content-container span {
+    font-size: 2em;
+    line-height: 1.4em;
+    color: #606060;   
+}
+.content-container {
+    padding: 20px;
 }
 
 /************************/
@@ -507,26 +537,295 @@ a img {
     transition-timing-function: ease-in-out;
 }
 
-/******************/
-/** JOURNEY PAGE **/
-/******************/
-#journey-narrative {
+/*******************/
+/** PROJECTS PAGE **/
+/*******************/
+.project-entry {
+    margin: 0 auto 20px auto;
+    width: 90%;
+    border: 1px solid #606060;
+    border-radius: 10px;
+    padding: 8px;
+}
+.project-img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.project-img img {
+    padding: 5px;
+    width: 100px;
+}
+.project-description {
+    display: inline-block;
+    max-width: 1300px;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+.project-link {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
+.project-link a {
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #181818;
+}
+.project-link a:hover {
+    background-color: #6D6D6D;
+}
+
+/********************/
+/** PROJECT DETAIL **/
+/********************/
+.project-detail-back {
+    font-size: 1.5em;
+}
+.project-detail {
+    border: 0;
+}
+.project-detail img {
+    padding: 10px;
+    width: auto;
+}
+
+/****************/
+/** ERROR PAGE **/
+/****************/
+#error-page {
+    margin-bottom: 100px;
+    text-align: center;
+}
+#error-text, #error-img {
+    display: inline-block;
+    vertical-align: middle;
     padding: 20px;
 }
-#journey-narrative h2 {
+#error-text, #error-text h2, #error-text h3 {
+    text-align: right;
+}
+#error-img {
+    width: auto;
     text-align: center;
-    padding-top: 75px;
-    padding-bottom: 50px;
-    font-size: 5em;
-    color: #C0C0C0;
 }
-#journey-narrative h3 {
-    text-align: left;
-    font-size: 3.5em;
-    color: #C0C0C0;
+#error-img h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
-#journey-narrative p {
-    font-size: 2em;
-    line-height: 1.4em;
-    color: #606060;   
+#error-img img {
+    width: 40%;
+}
+
+/*******************/
+/** MEDIA QUERIES **/
+/*******************/
+/** Generic 1279 **/
+@media (max-width: 1279px) {
+    #about {
+        height: 427px;
+    }
+    #about h2 {
+        font-size: 4.5em;
+        line-height: 1.1em;
+    }
+    #about p {
+        padding: 35px 0 0 0;
+        font-size: 2.2em;
+    }
+}
+/** Generic 1024 **/
+@media (max-width: 1024px) {
+    #header h1 {
+        font-size: 6em;
+    }
+    #skills {
+        width: 100%
+    }
+    #skills h2 {
+        font-size: 4.3em;
+    }
+    #about {
+        height: 380px;
+    }
+    #about .col.right {
+        width: 45%;
+        padding-right: 0%
+    }
+    #about h2 {
+        font-size: 3.3em;
+        line-height: 1.1em;
+    }
+    #about p {
+        padding: 35px 0 0 0;
+        font-size: 1.9em;
+    }
+}
+/** Generic 767 **/
+@media (max-width: 767px) {
+    #header h1 {
+        font-size: 5em;
+    }
+    #skills h2 {
+        font-size: 4em;
+    }
+    #about {
+        width: 100%;
+        height: auto;
+    }
+    #about .col {
+        float: none;
+    }
+    #about .col.left {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    #about .col.right {
+        width: 100%
+    }
+    #about h2 {
+        padding: 35px 20px;
+    }
+    #about p {
+        padding: 0 20px 35px;
+    }
+    #about-img {
+        display: none;
+    }
+    #nav-menu .menu-item {
+        font-size: 2em;
+    }
+}
+/** Generic 750 **/
+@media (max-width: 750px) {
+    #header {
+        position: absolute;
+        height: 300px;
+    }
+    #header h1 {
+        line-height: 1.2em;
+        font-size: 4em;
+    }
+    #skills h2 {
+        padding-top: 38px;
+        padding-bottom: 20px;
+        font-size: 3em;
+        text-align: center !important;
+    }
+    #about h2 {
+        padding: 55px 20px 30px;
+        font-size: 2.8em;
+    }
+    #about p {
+        padding-bottom: 55px;
+    }
+    #about-img {
+        display: none;
+    }
+    #nav-menu .menu-item {
+        font-size: 1.5em;
+    }
+}
+/** Generic 450 **/
+@media (max-width: 450px) {
+    #header h1 {
+        line-height: 1.2em;
+        font-size: 3em;
+    }
+    #skills h2 {
+        font-size: 2em;
+    }
+    #skills-preview {
+        min-width: 300px !important;
+    }
+    .skill-item {
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+        -webkit-transform-origin: 0% 0%;
+        -moz-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+        -o-transform-origin: 0% 0%;
+        transform-origin: 0% 0%
+    }
+    #about-img {
+        display: none;
+    }
+    #nav-menu .menu-item {
+        font-size: 1em;
+    }
+}
+/** iPad (portrait and landscape) **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+    #about h2 {
+        font-weight: lighter;
+    }
+}
+/** iPad (landscape) **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    #nav-menu .menu-item {
+        font-size: 2.5em;
+    }
+}
+/** iPad (portrait) **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    #nav-menu .menu-item {
+        font-size: 2em;
+    }
+}
+/** iPad 3/4 Retina (portrait and landscape) **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/** iPad 3/4 Retina (landscape) **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/** iPad 3/4 Retina (portrait) **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/** iPad 1/2 Non-Retina (portrait and landscape) **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+/** iPad 1/2 Non-Retina (landscape) **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1)  {
+
+}
+/** iPad 1/2 Non-Retina (portrait) **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+/** iPhone 5 (portrait and landscape) **/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+}
+/** iPhone 5 (landscape) **/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+
+}
+/** iPhone 5 (portrait) **/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+
+}
+/** iPhone 2G-4S (portrait and landscape) **/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .superfluous {
+        display: none;
+    }
+    #nav-menu .menu-item {
+        font-size: 2em;
+    }
+}
+/** iPhone 2G-4S (landscape) **/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+
+}
+/** iPhone 2G-4S (portrait) **/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) {
+
 }
