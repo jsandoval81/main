@@ -185,7 +185,7 @@
             }
         }
         //== Animate scoll if IE is newer
-        if ((!oldieishere) && ($(window).width() >= 768)) {
+        if ((!oldieishere) && (!that.isTouch) && ($(window).width() > 1024)) {
             //== Initialize skill elements
             for (i = 0; i < multipleSkillItems.length; i += 1) {
                 $curItem = $(multipleSkillItems[i]);
