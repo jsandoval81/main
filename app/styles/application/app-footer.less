@@ -1,0 +1,106 @@
+
+.app-footer {
+    padding-bottom: 20px;
+    background-color: @darkGrey;
+    color: @midGrey;
+    font-weight: 100;
+    text-align: center;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    margin: 20px 0;
+
+    a.nav-link {
+        @navHoverColor: @white;
+
+        position: relative;
+        display: inline-block;
+        flex-basis: 25%;
+        padding: 10px 20px;
+        font-size: @fontSize;
+        font-family: @fontFamilySpecial;
+        color: @lightGrey;
+        text-align: center;
+        cursor: pointer;
+
+        @media (min-width: 500px) {
+            font-size: @fontSizeLarge;
+        }
+
+        @media (min-width: 760px) {
+            font-size: @fontSizeExtraLarge;
+        }
+
+        // &::before {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 0;
+        //     background: @navHoverColor;
+        //     content: '';
+        //     -webkit-transition: top 0.3s;
+        //     -moz-transition: top 0.3s;
+        //     transition: top 0.3s;
+        // }
+        //
+        // &::after {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 1px;
+        //     height: 0;
+        //     background: @navHoverColor;
+        //     content: '';
+        //     -webkit-transition: height 0.3s;
+        //     -moz-transition: height 0.3s;
+        //     transition: height 0.3s;
+        // }
+
+        span {
+            position: relative;
+        }
+
+        span::before {
+            content: attr(data-letters);
+            position: absolute;
+            color: @navHoverColor;
+            left: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0%;
+            -webkit-transition: width 0.5s;
+            transition: width 0.5s;
+            -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+            transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+        }
+
+        &:hover {
+
+            // &::before {
+            //     top: 100%;
+            //     height: 1px;
+            //     opacity: 1;
+            // }
+            //
+            // &::after {
+            //     height: 100%;
+            // }
+
+            span::before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+footer {
+    font-size: @fontSizeSmall;
+
+    @media (min-width: 500px) {
+        font-size: @fontSize;
+    }
+}
