@@ -20,3 +20,5 @@ testem.log
 .DS_Store
 
 .env.deploy.production
+.env.deploy.test
+.env.deploy.dev
